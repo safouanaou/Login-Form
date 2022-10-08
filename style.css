@@ -1,0 +1,117 @@
+:root{
+    --linear: linear-gradient(45deg, rgb(216, 114, 216), rgb(235, 147, 147))
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    position: relative;
+    height: fit-content;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.11);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.form-div{
+    padding-bottom: 22px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 350px;
+    font-size: 1.4rem;
+}
+
+form div>input{
+    margin-top: 5px;
+    height: 45px;
+    background: rgb(251, 251, 251);
+    border: 1px solid rgba(0, 0, 0, 0.386);
+    padding-left: 10px;
+    font-size: 1rem;
+  
+}
+
+form div>input:focus{
+    background-color: rgb(228, 228, 228);
+    outline: none ;
+}
+
+#color-box{
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding-top: 0px;
+    width: 100%;
+    height: 120px;
+    background:var(--linear);
+}
+
+#color-box h1{
+    top: 0;
+    position: absolute;
+    top: 0cm;
+    font-size: 9rem;
+    color: rgb(255, 255, 255);
+}
+
+input::placeholder{
+    opacity: 0.7;
+    font-size: .9rem;
+}
+
+#submit{
+    height: 50px;
+    width: 350px;
+    border: none;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: white;
+    background: var(--linear);
+}
+.error{
+    bottom: 0;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: rgba(255, 0, 0, 0.656);
+    width: fit-content;
+    height: fit-content;
+}
+
+.errorBorder{    
+    border: 3px solid red;
+
+}
+
+.success {
+    border: 3px solid green;
+
+}
